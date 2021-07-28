@@ -1,0 +1,104 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full-page
+{
+	height:100%;
+	width:100%;
+	background: linear-gradient(-135deg,#4158d0, #00FFCC);
+  	/*background-image: url("https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yMDY0MTEwOC9vcmlnaW4ucG5nIiwiZXhwaXJlc19hdCI6MTY2MjA3NDkyOX0.zTHIwtrCK6zsYHTPWHOoqdhMOHYu0WJbO_sKB1Dt4PY/img.png?quality=80&width=773");  */
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif; 
+	position: absolute;
+}
+
+.navbar
+{
+	background: linear-gradient(-135deg,#4158d0, #00FFCC);
+	display: flex;
+	align-items: center;
+	padding:20px;
+
+}
+.menu
+{
+ 
+    /*background: #C0C0C0; */
+    text-align: center;
+	padding-left: 420px;
+    
+} 
+
+.menu ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    text-align: center;
+} 
+
+.menu ul li
+{
+    width: 20 px;
+    margin: 15px;
+    padding: 15px;
+} 
+
+.menu ul li a, .menu ul li button
+{
+    text-decoration: none;
+    color: white;
+	font-size: 20px;
+} 
+
+.active, .menu ul li:hover
+{
+  background: #00FFCC;
+  border-radius: 3px;
+}
+
+.sub-menu
+{
+	display:none;
+}
+
+.menu ul li:hover .sub-menu
+{
+	display:block;
+	position: absolute;
+ 	background:#4158d0; /*#00FFCC,#3e8e41, #04AA6D;*/
+	margin-top: 15px;
+	margin-left: -15px; 
+  	border-radius: 3px;
+}
+
+.menu ul li:hover .sub-menu ul
+{
+	display:block;
+	margin:20px;
+}
+
+.menu ul li:hover .sub-menu ul li
+{
+	width: 130 px;
+	padding: 10px;
+	background: transparent;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.menu ul li:hover .sub-menu .register-sub li:hover, .menu ul li:hover .sub-menu .login-sub li:hover
+{
+	width: 90 px;
+	padding: 10px;
+	background: transparent;
+	background-color: #00FFCC;
+	border-radius: 3px;
+	text-align: center;
+}
+
